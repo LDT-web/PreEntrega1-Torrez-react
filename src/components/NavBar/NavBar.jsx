@@ -1,15 +1,20 @@
 import CarWidget from "../CarWidget/CarWidget";
+import style from "./NavBar.module.css";
 const NavBar = () => {
   return (
     <nav>
-      <h2>wilgray</h2>
+      <h2 className={style.h2}>wilgray</h2>
 
       <div>
-        <button>Remeras</button>
-        <button>Pantalones</button>
-        <button>Zapatillas</button>
+        <ul>
+          <li>Remeras</li>
+          <li>Pantalones</li>
+          <li>Zapatillas</li>
+        </ul>
       </div>
-      <CarWidget />
+      <div className={style.CarWidget}>
+        <CarWidget />
+      </div>
     </nav>
   );
 };
