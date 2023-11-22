@@ -10,11 +10,11 @@ function App() {
       <div>
         <NavBar />
         <ItemsListContainer greeting={"Bienvenido a Wilgray"} />
-        {/* <ItemCount
+        <ItemCount
           initial={1}
           stock={15}
           onAdd={(quantity) => console.log("cantidad agregada", quantity)}
-        /> */}
+        />
       </div>
     </>
   );
